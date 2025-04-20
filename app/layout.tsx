@@ -26,6 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
+      <head>
+        <meta name='apple-mobile-web-app-title' content='RedMojo' />
+      </head>
       <body
         className={cn(
           'flex min-h-screen flex-col font-sans antialiased',
