@@ -17,7 +17,7 @@ export default function Header() {
               className='inline-block'
               width='100'
               height='50'
-              viewBox='0 0 200 100'
+              viewBox='10 20 140 80'
               xmlns='http://www.w3.org/2000/svg'
             >
               <defs>
@@ -38,25 +38,18 @@ export default function Header() {
                   />
                 </linearGradient>
               </defs>
-              <g transform='translate(-30, -15) scale(4)'>
-                <path
-                  d='M10.5 24.638l3.467-1.812V10.745l4.952 2.778-3.714 1.933v3.987L23.5 25v-3.745l-5.076-3.503 4.209-2.175v-3.866L13.967 7 10.5 8.812z'
-                  fill='url(#redGradient)'
-                />
-              </g>
+
               <text
-                x='65'
-                y='85'
-                font-family='Arial, sans-serif'
+                x='30'
+                y='75'
+                font-family="'Brush Script MT', cursive"
                 font-size='50'
-                font-weight='bold'
-                fill={filledColor}
-                letter-spacing='2'
+                fill='url(#redGradient)'
               >
                 M
               </text>
 
-              <g transform='translate(105, 55) scale(1)'>
+              <g transform='translate(80, 55) scale(1)'>
                 <path
                   fill-rule='evenodd'
                   clip-rule='evenodd'
@@ -66,7 +59,7 @@ export default function Header() {
               </g>
 
               <text
-                x='130'
+                x='105'
                 y='75'
                 font-family='Arial, sans-serif'
                 font-size='30'
@@ -77,7 +70,7 @@ export default function Header() {
                 j
               </text>
 
-              <g transform='translate(138, 55) '>
+              <g transform='translate(113, 55) '>
                 <path
                   fill-rule='evenodd'
                   clip-rule='evenodd'
