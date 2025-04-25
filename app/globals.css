@@ -103,3 +103,15 @@
     @apply font-medium;
   }
 }
+
+
+.mdx-content img {
+  border-radius: 0.5rem; /* rounded-md */
+  border: 1px solid;
+  border-color: #e5e7eb; /* neutral-200 */
+  width: 100%;
+}
+
+.dark .mdx-content img {
+  border-color: #d1d5db; /* neutral-300 */
+}
