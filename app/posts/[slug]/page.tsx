@@ -38,13 +38,19 @@ export default async function Post({ params }: { params: { slug: string } }) {
         </Link>
 
         {image && (
-          <div className='relative mb-6 h-96 w-full overflow-hidden rounded-lg'>
-            <Image
-              src={image}
-              alt={title || ''}
-              className='object-cover'
-              fill
-            />
+          <div className='relative mb-6 w-full overflow-hidden'>
+            {/* Single container with themed border that changes based on theme */}
+            <div className='relative rounded-lg border-2 border-black dark:border-white'>
+              {/* Image container with no additional border */}
+              <div className='relative h-96 w-full overflow-hidden'>
+                <Image
+                  src={image}
+                  alt={title || ''}
+                  className='rounded-md object-cover'
+                  fill
+                />
+              </div>
+            </div>
           </div>
         )}
 
