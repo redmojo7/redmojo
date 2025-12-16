@@ -41,7 +41,10 @@ export default function NewsletterForm() {
 
   return (
     <section>
-      <Card className='rounded-lg border-0 dark:border'>
+      <Card className='relative overflow-hidden rounded-lg border border-green-500/30'>
+        {/* Terminal-style border glow */}
+        <div className='absolute inset-0 rounded-lg bg-gradient-to-r from-green-500/0 via-green-500/10 to-green-500/0 opacity-0 transition-opacity duration-300 hover:opacity-100'></div>
+
         <CardContent className='flex flex-col gap-8 pt-6 md:flex-row md:justify-between md:pt-8'>
           <div>
             <h2 className='text-2xl font-bold'>Subscribe to my newsletter</h2>
@@ -49,7 +52,6 @@ export default function NewsletterForm() {
               Get updates on my work and projects.
             </p>
           </div>
-
           <form
             onSubmit={handleSubmit(processForm)}
             className='flex flex-col items-start gap-3'
