@@ -3,6 +3,21 @@ import NewsletterForm from '@/components/newsletter-form'
 import RecentPosts from '@/components/recent-posts'
 import RecentProjects from '@/components/recent-projects'
 
+function Split({ header }: { header: string }) {
+  return (
+    <div className='relative'>
+      {/* Section divider with tech aesthetic */}
+      <div className='my-12 flex items-center gap-4'>
+        <div className='h-px flex-1 bg-gradient-to-r from-transparent via-green-500/30 to-transparent'></div>
+        <div className='font-mono text-xs text-muted-foreground'>
+          {'<'} {header} {'>'}
+        </div>
+        <div className='h-px flex-1 bg-gradient-to-r from-transparent via-green-500/30 to-transparent'></div>
+      </div>
+    </div>
+  )
+}
+
 export default function Home() {
   return (
     <section className='relative pb-24 pt-40'>
@@ -23,19 +38,14 @@ export default function Home() {
       <div className='container max-w-3xl'>
         <Intro />
 
-        <div className='relative'>
-          {/* Section divider with tech aesthetic */}
-          <div className='my-12 flex items-center gap-4'>
-            <div className='h-px flex-1 bg-gradient-to-r from-transparent via-green-500/30 to-transparent'></div>
-            <div className='font-mono text-xs text-muted-foreground'>
-              {'<'} /dev/redmojo {'>'}
-            </div>
-            <div className='h-px flex-1 bg-gradient-to-r from-transparent via-green-500/30 to-transparent'></div>
-          </div>
-        </div>
+        <Split header='/dev/redmojo' />
 
         <RecentPosts />
+
+        <Split header='/post/redmojo' />
         <RecentProjects />
+
+        <Split header='/newsletter/redmojo' />
 
         <NewsletterForm />
       </div>
