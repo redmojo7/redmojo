@@ -273,9 +273,11 @@ export default function Intro() {
 
   return (
     <section className='pb-24'>
-      {/* Profile Image with Glitch Effect - At the top */}
-      <div className='relative mb-8 w-full'>
-        <div className='group relative mx-auto w-full max-w-[175px]'>
+      {/* Heading and Avatar Container */}
+      <div className='mb-8 flex flex-col items-center gap-6 md:flex-row md:items-start md:gap-8'>
+        {/* Profile Image with Glitch Effect */}
+        <div className='relative shrink-0'>
+          <div className='group relative mx-auto w-full max-w-[175px]'>
           <div className='relative overflow-hidden rounded-lg border-2 border-red-500/30 bg-gradient-to-br from-red-500/10 to-transparent p-1 shadow-lg shadow-red-500/20 transition-all duration-300 group-hover:border-green-500/50 group-hover:bg-gradient-to-br group-hover:from-green-500/10 group-hover:to-transparent group-hover:shadow-green-500/20'>
             <Image
               className='relative z-10 block w-full rounded-lg grayscale transition-all duration-300 group-hover:grayscale-[0.2]'
@@ -300,6 +302,17 @@ export default function Intro() {
           <div className='absolute -right-2 -top-2 h-4 w-4 border-r-2 border-t-2 border-red-500 transition-colors duration-300 group-hover:border-green-500'></div>
           <div className='absolute -bottom-2 -left-2 h-4 w-4 border-b-2 border-l-2 border-red-500 transition-colors duration-300 group-hover:border-green-500'></div>
           <div className='absolute -bottom-2 -right-2 h-4 w-4 border-b-2 border-r-2 border-red-500 transition-colors duration-300 group-hover:border-green-500'></div>
+          </div>
+        </div>
+
+        {/* Heading */}
+        <div className='flex-1'>
+          <div className='mb-2 flex items-center gap-3'>
+            <span className='font-mono text-sm text-green-500'>$</span>
+            <h1 className='title no-underline'>
+              Hey, I&#39;m <span className='text-red-500'>Red</span>mojo.
+            </h1>
+          </div>
         </div>
       </div>
 
