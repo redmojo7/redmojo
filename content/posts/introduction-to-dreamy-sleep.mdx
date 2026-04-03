@@ -1,0 +1,186 @@
+---
+title: Dreamy Sleep – A Calming Soundscape for Better Rest
+summary: >
+  Dreamy Sleep is a minimalist sleep‑sound web app designed to help users
+  unwind, relax, and fall asleep using ambient audio, gentle lullabies, and a
+  soothing visual experience.
+image: /images/posts/dreamy-sleep/dreamy-sleep.png
+author: 'Redmojo'
+publishedAt: '2025-10-12'
+---
+
+[Dreamy Sleep](https://dreamy-sleep.redmojo.au) is a calming, browser‑based
+sleep sound application crafted to help users relax and drift into rest. It
+combines ambient soundscapes, language‑based audio content, a configurable sleep
+timer, and a soft glassmorphic interface to create a peaceful nighttime
+experience.
+
+In this post, we’ll explore the core features and design choices behind Dreamy
+Sleep.
+
+## Landing Page
+
+<div
+  align='center'
+  style={{
+    border: '1px solid black',
+    paddingTop: '5px',
+    height: 'auto',
+    overflow: 'hidden',
+    borderRadius: '10px'
+  }}
+>
+  <img
+    src='/images/posts/dreamy-sleep/dreamy-sleep-landing.png'
+    alt='Dreamy Sleep Landing Page'
+    style={{
+      display: 'block',
+      marginTop: '-5px',
+      marginBottom: '-5px'
+    }}
+  />
+</div>
+
+The landing page sets the mood immediately with a starry‑night background, soft
+colors, and subtle motion. The goal is to reduce friction and visual noise,
+allowing users to start listening within seconds. No accounts, no setup—just
+press play and relax.
+
+## Sound Playground
+
+<div
+  align='center'
+  style={{
+    border: '1px solid black',
+    paddingTop: '5px',
+    height: 'auto',
+    overflow: 'hidden',
+    borderRadius: '10px'
+  }}
+>
+  <img
+    src='/images/posts/dreamy-sleep/dreamy-sleep-player.png'
+    alt='Dreamy Sleep Sound Player'
+    style={{
+      display: 'block',
+      marginTop: '-5px',
+      marginBottom: '-5px'
+    }}
+  />
+</div>
+
+The sound playground is where users select and control ambient audio. Each sound
+is designed to loop seamlessly, creating a stable and uninterrupted listening
+experience ideal for sleep or relaxation.
+
+Volume adjustments are handled through the **Web Audio API**, providing smooth
+and precise control without abrupt changes.
+
+## Sound Categories
+
+Dreamy Sleep organizes sounds by language and theme, making it easy to switch
+based on personal preference or cultural familiarity.
+
+### **Universal Sounds**
+
+These sounds work well for most listeners and are perfect for general
+relaxation:
+
+- Lullaby
+- Rain
+- Coffee Shop ambience
+- White Noise
+
+### **Cantonese**
+
+A gentle Cantonese lullaby option for users who find comfort in familiar spoken
+rhythm and melody:
+
+- 洗白白
+
+### **Japanese**
+
+Traditional children’s songs with a soft, nostalgic tone:
+
+- どんぐりころころ
+
+The category switcher allows users to move between sound sets effortlessly
+without interrupting playback.
+
+## Sleep Timer
+
+<div
+  align='center'
+  style={{
+    border: '1px solid black',
+    paddingTop: '5px',
+    height: 'auto',
+    overflow: 'hidden',
+    borderRadius: '10px'
+  }}
+>
+  <img
+    src='/images/posts/dreamy-sleep/dreamy-sleep-timer.png'
+    alt='Dreamy Sleep Timer'
+    style={{
+      display: 'block',
+      marginTop: '-5px',
+      marginBottom: '-5px'
+    }}
+  />
+</div>
+
+The built‑in sleep timer allows users to set an automatic stop time using hours
+and minutes. This prevents sounds from playing all night and helps establish a
+natural sleep routine.
+
+As the timer approaches zero, audio stops gracefully rather than cutting off
+abruptly.
+
+## Visual Design
+
+Dreamy Sleep uses a **glassmorphic design system** with:
+
+- Frosted, semi‑transparent panels
+- Soft shadows and rounded corners
+- A gently animated starry background
+
+The UI is intentionally low‑contrast and distraction‑free, supporting extended
+use in dark environments without eye strain. All interactions are designed to
+feel slow, calm, and deliberate.
+
+## Technology Overview
+
+Dreamy Sleep is intentionally lightweight and dependency‑free:
+
+- **HTML5** – Semantic structure and native audio elements
+- **CSS3** – Flexbox, Grid, animations, and backdrop filters
+- **Vanilla JavaScript (ES6+)** – Simple, readable logic
+- **Web Audio API** – `AudioContext` and `GainNode` for volume control
+- **Google Fonts** – Quicksand font family for a soft visual tone
+
+No frameworks, no build tools—just modern web standards.
+
+## Why Dreamy Sleep?
+
+Dreamy Sleep is ideal for users who want:
+
+- A distraction‑free sleep aid
+- Cultural and language‑specific lullabies
+- No ads, no login, no subscription
+- A calming visual experience alongside audio
+
+It’s especially well‑suited for nighttime use, meditation, focused rest, or
+light background ambience.
+
+## Conclusion
+
+Dreamy Sleep is a small, focused project that demonstrates how thoughtful
+design, modern browser APIs, and simplicity can come together to create a
+comforting user experience. By prioritizing calm visuals, gentle audio, and ease
+of use, it offers a peaceful alternative to busy, over‑featured wellness apps.
+
+🌙 _Goodnight, little star._
+
+🔗 Get started: [Dreamy Sleep](https://dreamy-sleep.redmojo.au)  
+💻 Source Code: [GitHub](https://github.com/redmojo7/Dreamy-Sleep)

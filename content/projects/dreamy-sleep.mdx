@@ -1,0 +1,134 @@
+---
+title: Dreamy Sleep
+summary:
+  A calming sleep‑sound web app featuring ambient audio, language‑based sound
+  categories, and a customizable sleep timer, designed to help users relax and
+  fall asleep.
+image: /images/projects/dreamy-sleep.png
+author: Redmojo
+publishedAt: '2025-10-12'
+---
+
+**Dreamy Sleep** is a lightweight, calming web application designed to help
+users relax and drift into sleep using ambient sounds, gentle lullabies, and
+soothing background audio.
+
+The app focuses on simplicity, aesthetics, and accessibility, offering a clean
+glassmorphic interface, smooth animations, and intuitive controls. Dreamy Sleep
+works entirely in the browser and requires no login or backend services.
+
+## Key Features
+
+- **Curated Sleep Sounds**  
+  Multiple ambient sounds organized by language and theme.
+
+- **Language‑Based Categories**  
+  Easily switch between:
+  - Universal sounds
+  - Cantonese children’s songs
+  - Japanese children’s songs
+
+- **Sleep Timer**  
+  Set a custom timer with hour and minute precision. Audio fades out
+  automatically when the timer completes.
+
+- **Fine‑Grained Volume Control**  
+  Powered by the Web Audio API for smooth, real‑time volume adjustments.
+
+- **Calming Visual Design**
+  - Glassmorphic UI elements
+  - Subtle animated starry‑night background
+  - Soft typography and gentle color palette
+
+- **Responsive Layout**  
+  Optimized for both desktop and mobile devices.
+
+## Sound Sources & Attribution
+
+All audio files retain their original copyright and are used with attribution.
+
+### Universal
+
+- **Lullaby** – [YouTube](https://www.youtube.com/watch?v=flJo10TDHcU)
+- **Rain** –
+  [Google Sounds](https://actions.google.com/sounds/v1/weather/rain_heavy_loud.ogg)
+- **Coffee Shop** –
+  [Google Sounds](https://actions.google.com/sounds/v1/ambiences/coffee_shop.ogg)
+- **White Noise** – [Pixabay](https://pixabay.com/)
+
+### Cantonese
+
+- **洗白白** – [YouTube](https://www.youtube.com/watch?v=2gt8OEyU1wI)
+
+### Japanese
+
+- **どんぐりころころ** – [YouTube](https://www.youtube.com/watch?v=Y3cPq5vmXng)
+
+## Technology Stack
+
+- **HTML5**  
+  Semantic markup and native audio elements.
+- **CSS3**  
+  Custom properties, Flexbox, Grid, animations, and backdrop filters.
+- **Vanilla JavaScript (ES6+)**  
+  Clean, dependency‑free logic.
+- **Web Audio API**  
+  `AudioContext` and `GainNode` for precise audio control.
+- **Google Fonts**  
+  Quicksand font family for a soft, approachable feel.
+
+## Getting Started
+
+Dreamy Sleep runs without any build tools or frameworks.
+
+### Local Development
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open:
+
+```text
+http://localhost:8000
+```
+
+## Deployment Options
+
+### GitHub Pages
+
+1.  Fork https://github.com/redmojo7/Dreamy-Sleep
+2.  Open **Settings → Pages**
+3.  Select the `main` branch as the source
+4.  Visit:
+
+```text
+https://your-username.github.io/Dreamy-Sleep
+```
+
+### Vercel
+
+```bash
+npm i -g vercel
+vercel
+```
+
+Or connect the repository directly via https://vercel.com.
+
+## Browser Support
+
+Dreamy Sleep works in all modern browsers supporting the Web Audio API:
+
+- Chrome
+- Firefox
+- Safari
+- Edge
+
+## Summary
+
+Dreamy Sleep is a small but carefully crafted web project that demonstrates how
+thoughtful design, modern browser APIs, and simple tooling can create a calm and
+delightful user experience. It emphasizes accessibility, aesthetics, and mindful
+interaction—without compromising performance or simplicity.
+
+_Goodnight, little star._ 🌙
