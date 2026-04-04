@@ -20,7 +20,7 @@ export default function Projects({
                   src={project.image}
                   alt={project.title || ''}
                   fill
-                  className='rounded-lg object-cover object-center transition-transform duration-500 group-hover:scale-105'
+                  className='rounded-lg border border-border border-muted-foreground/30 object-cover object-center transition-transform duration-500 group-hover:scale-105'
                 />
               </div>
             )}
