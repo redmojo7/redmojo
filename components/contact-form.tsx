@@ -32,6 +32,7 @@ export default function ContactForm() {
     const result = await sendEmail(data)
 
     if (result?.error) {
+      console.error('Email sending error:', result.error)
       toast.error('An error occurred! Please try again.')
       return
     }

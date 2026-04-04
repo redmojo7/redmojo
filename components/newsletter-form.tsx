@@ -31,6 +31,7 @@ export default function NewsletterForm() {
     const result = await subscribe(data)
 
     if (result?.error) {
+      console.error('Subscription error:', result.error)
       toast.error('An error occurred! Please try again.')
       return
     }
@@ -41,9 +42,10 @@ export default function NewsletterForm() {
 
   return (
     <section>
-      <Card className='relative overflow-hidden rounded-lg border border-green-500/30'>
+      <Card className='group relative overflow-hidden rounded-lg border border-green-500/30'>
         {/* Terminal-style border glow */}
-        <div className='absolute inset-0 rounded-lg bg-gradient-to-r from-green-500/0 via-green-500/10 to-green-500/0 opacity-0 transition-opacity duration-300 hover:opacity-100'></div>
+
+        <div className='pointer-events-none absolute inset-0 rounded-lg bg-gradient-to-r from-green-500/0 via-green-500/10 to-green-500/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100' />
 
         <CardContent className='flex flex-col gap-8 pt-6 md:flex-row md:justify-between md:pt-8'>
           <div>
